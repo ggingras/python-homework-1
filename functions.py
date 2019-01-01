@@ -3,20 +3,20 @@
 from main import Released, Producers, Song, HasBeenNumberOne
 
 ### Define my functions
-def GetReleasedDate():
+def released():
     return Released
 
-def GetProducers():
+def producers():
     return Producers
 
-def GetSongName():
+def song():
     return Song
 
-def IsSongHasBeenNumberOne():
+def hasBeenNumberOne():
     return HasBeenNumberOne
 
 ### Print four song properties using defined functions
-print('Favourite Song: ' + GetSongName())
-print('Released: ' + GetReleasedDate().strftime('%m/%d/%Y'))
-print('Song Producers: ' + ", ".join(str(x) for x in GetProducers()))
-print('Has been number one on Billboard: ' + str(IsSongHasBeenNumberOne()))
+print('Favourite Song: ' + song())
+print('Released: ' + released().strftime('%m/%d/%Y'))
+print('Song Producers: ' + ", ".join(str(x) for x in producers()))
+print('Has been number one on Billboard: ' + str(hasBeenNumberOne()))
